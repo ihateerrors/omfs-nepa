@@ -572,3 +572,28 @@ figcaption {
   text-align: left;
   padding: 10px;
 }
+
+
+.accordion:after {
+  content: "+";
+  float: right;
+  font-size: 28px;
+  margin-right: 20px;
+  font-weight: 500;
+  font-style: normal;
+  color: inherit;
+}
+
+.accordion.active:after {
+  font-size: 38px;
+  content: "-";
+}
+
+.accordion-list .thr:not(:first-of-type) {
+  border-top: none;
+}
+
+.accordion-list .thr {
+  margin: 0px;
+
+}

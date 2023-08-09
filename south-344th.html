@@ -187,40 +187,43 @@
 
     <div class="topdiv sticky-top">
       <progress id="progressbar" value="0" max="100"></progress>
-      <nav class="navbar navbar-expand-sm bg-transparent py-0 sticky-top">
+      <nav class="navbar navbar-expand-sm bg-transparent pt-0 sticky-top">
         <div class="container">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <nav
-            class="collapse navbar-collapse top_nav scrollspy_row"
-            id="navbarSupportedContent"
-          >
+          <nav class="collapse navbar-collapse top_nav scrollspy_row" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" href="/#welcome">Welcome</a>
+                <a class="nav-link active" href="#welcome">Welcome</a>
               </li>
-
+  
               <li class="nav-item">
-                <a class="nav-link" href="/#ev">Environmental review</a>
+                <a class="nav-link" href="#ev">Environmental review</a>
               </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="/#alternatives">Alternatives</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Alternatives
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/preferred-alternative.html">Preferred alternative</a>
+                  <a class="dropdown-item" href="/south-344th.html">South 344th Street</a>
+                  <a class="dropdown-item" href="/midway-landfill.html">Midway Landfill</a>
+                </div>
               </li>
-
               <li class="nav-item">
-                <a class="nav-link" href="/#next">Next steps</a>
+                <a class="nav-link" href="#key-impacts">Key impacts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#comment">Comment now<i class="fa fa-comment-o ps-3"></i></a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="#next-steps">Next steps</a>
               </li>
             </ul>
+            
           </nav>
         </div>
       </nav>

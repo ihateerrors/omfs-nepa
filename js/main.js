@@ -83,13 +83,16 @@ accAnchorList.forEach(anchor => anchor.addEventListener("click", (e) => {
     // For example, if your accordion has a class to toggle open/close, you can do:
     targetAccordion.classList.toggle("active");
 
-      /* Toggle between hiding and showing the active panel */
+    setTimeout(()=> {
+        /* Toggle between hiding and showing the active panel */
     var panel = targetAccordion.nextElementSibling;
     if (panel.style.display === "block") {
       panel.style.display = "none";
     } else {
       panel.style.display = "block";
     }
+    }, 500);
+    
   }
 }));
 

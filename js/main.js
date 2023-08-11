@@ -79,9 +79,8 @@ accAnchorList.forEach(anchor => anchor.addEventListener("click", (e) => {
   const targetAccordion = document.getElementById(targetId); // Find accordion by id
 
   if (targetAccordion) {
-    targetAccordion.classList.toggle("active");
-
     setTimeout(()=> {
+      targetAccordion.classList.toggle("active");
         /* Toggle between hiding and showing the active panel */
     var panel = targetAccordion.nextElementSibling;
     if (panel.style.display === "block") {

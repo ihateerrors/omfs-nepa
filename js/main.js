@@ -85,11 +85,8 @@ accAnchorList.forEach(anchor => anchor.addEventListener("click", (e) => {
   const targetAccordion = document.getElementById(targetId); // Find accordion by id
 
   if (targetAccordion) {
-    // Open the accordion (add your open logic here)
-    // For example, if your accordion has a class to toggle open/close, you can do:
-    targetAccordion.classList.toggle("active");
-
     setTimeout(()=> {
+      targetAccordion.classList.toggle("active");
         /* Toggle between hiding and showing the active panel */
     var panel = targetAccordion.nextElementSibling;
     if (panel.style.display === "block") {

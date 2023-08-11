@@ -74,3 +74,32 @@ var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggl
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 })
+
+// Anchor tag opens corres
+const accList = document.querySelectorAll(".accordion");
+const accAnchorList = document.querySelectorAll(".acc-anchor");
+
+accAnchorList.forEach(anchor => anchor.addEventListener("click", (e) => {
+
+  const targetId = e.currentTarget.href.split('#')[1]; // Extract id from href
+  const targetAccordion = document.getElementById(targetId); // Find accordion by id
+
+  if (targetAccordion) {
+    // Open the accordion (add your open logic here)
+    // For example, if your accordion has a class to toggle open/close, you can do:
+    targetAccordion.classList.toggle("active");
+
+    setTimeout(()=> {
+        /* Toggle between hiding and showing the active panel */
+    var panel = targetAccordion.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+    }, 500);
+    
+  }
+}));
+
+

@@ -470,7 +470,24 @@ progress::-moz-progress-bar {
 progress {
   color: #2a7997;
 }
+/* Custom Tooltip styles */
+.tooltip {
+  max-width: 400px !important; /* Adjust the maximum width of the tooltip */
+}
 
+.tooltip-inner {
+  font-size: 1.7rem;
+  background-color: #2b376e;
+  max-width: 100% !important;
+}
+.tooltip-anchor {
+  font-weight: 600;
+  border-bottom: 2px dashed gray;
+  color: black;
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+}
 .timelinepage {
   position: relative;
   left: 20px;

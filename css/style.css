@@ -82,8 +82,14 @@ button {
 .pinksurvey {
   background-color: #eaeaea;
   border: 2px solid #d6148e;
-}
 
+}
+.sg-header {
+  display: none;
+}
+.sg-instructions h2{
+  font-size: 40px !important;
+}
 .gb {
   color: #ffffff;
   background-color: #2a7997;
@@ -557,9 +563,11 @@ progress {
   top: 7px;
 }
 
+
 .timelinepage .timeline-wrapper .tl:after {
   background: #2a7997;
 }
+
 
 .fa-star {
   color: #0299cc;

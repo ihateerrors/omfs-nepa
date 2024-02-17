@@ -668,3 +668,8 @@ ul ul {
 	border-radius: 5px;
   margin-top: 2em;
 }
+
+/* fixes tooltip issue on mobile */
+button.tooltip-anchor {
+  width: auto;
+}

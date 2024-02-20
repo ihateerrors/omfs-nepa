@@ -74,6 +74,7 @@ textarea {
 }
 button {
   overflow: visible;
+  word-wrap: normal;
 }
 
 button,

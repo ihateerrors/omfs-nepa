@@ -723,7 +723,24 @@ ul ul {
 	max-width: 900px;
 	margin-bottom: 2rem;
 	border-radius: 5px;
-  margin-top: 2em;
+	margin-top: 2em;
+}
+
+/* -- Centers the .accordion icons --  */
+
+.accordion {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.accordion.active:after {
+	font-size: 28px;
+	content: "–";
+}
+
+.panel {
+	padding: 0 2rem;
 }
 
 /* fixes tooltip issue on mobile */

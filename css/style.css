@@ -217,8 +217,8 @@ p {
 }
 
 .navbar-toggler {
-  background-color: #d9d9d9;
-  margin: 0 0 20px 0;
+	background-color: #d9d9d9;
+	margin: 0 0 20px 0;
 }
 
 .pbutton {
@@ -281,58 +281,58 @@ p {
 
 .top_nav.collapsing li,
 .top_nav.collapse.show li {
-    padding: 0 0 25px 0;
+	padding: 0 0 25px 0;
 }
 
 .navbar-toggler-icon {
-    background-image: none!important;
-    background-color: #333;
-    height: 3px;
-    width: 25px;
-    margin: 10px 0;
-    position: relative;
-    transition: all 0.35s ease-out;
-    transform-origin: center;
+	background-image: none !important;
+	background-color: #333;
+	height: 3px;
+	width: 25px;
+	margin: 10px 0;
+	position: relative;
+	transition: all 0.35s ease-out;
+	transform-origin: center;
 }
 
 .navbar-toggler-icon::before {
-    display: block;
-    background-color: #333;
-    height: 3px;
-    content: "";
-    position: relative;
-    top: -7px;
-    transition: all 0.15s ease-out;/*taken down to hide quicker*/
-    transform-origin: center;
+	display: block;
+	background-color: #333;
+	height: 3px;
+	content: "";
+	position: relative;
+	top: -7px;
+	transition: all 0.15s ease-out; /*taken down to hide quicker*/
+	transform-origin: center;
 }
 
 .navbar-toggler-icon::after {
-    display: block;
-    background-color: #333;
-    height: 3px;
-    content: "";
-    position: relative;
-    top: 4px;
-    transition: all 0.35s ease-out;
-    transform-origin: center;
+	display: block;
+	background-color: #333;
+	height: 3px;
+	content: "";
+	position: relative;
+	top: 4px;
+	transition: all 0.35s ease-out;
+	transform-origin: center;
 }
 
 .navbar-toggler-icon,
 .navbar-toggler-icon::before,
 .navbar-toggler-icon::after {
-    background-color: #333;
+	background-color: #333;
 }
 
 .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
-    transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 
 .navbar-toggler:not(.collapsed) .navbar-toggler-icon::before {
-    opacity: 0;
+	opacity: 0;
 }
 
 .navbar-toggler:not(.collapsed) .navbar-toggler-icon::after {
-    transform: rotate(-90deg) translateX(7px);
+	transform: rotate(-90deg) translateX(7px);
 }
 .ps {
 	margin-top: -1em;
@@ -673,6 +673,7 @@ i.fa.fa-check {
 figcaption {
 	text-align: left;
 	font-size: 14px;
+	font-style: italic;
 }
 
 .accordion-list .thr:not(:first-of-type) {
@@ -684,12 +685,11 @@ figcaption {
 }
 
 .cal-btn {
-	background-color: white;
-	border: 2px solid #2b376e;
+	background-color: #eaeaea;
+	border: 2px solid #d6078e;
 	text-align: center;
 	font-size: 19.5px;
 	padding: 1.25em;
-	border-radius: 5px;
 	box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.4);
 	cursor: pointer;
 	/* max-width: 300px; */
@@ -705,8 +705,15 @@ figcaption {
 	color: #2d2d2d;
 	text-decoration: none;
 }
-.cal-btn a span.cal-cta {
-	color: #007cad;
+.cal-btn a div.cal-cta {
+	font-family: inherit;
+	color: #ffffff;
+	background: #d6078e;
+	padding: 0.5em 1em;
+	width: fit-content;
+	margin: 1em auto 0;
+	border-radius: 5px;
+	font-weight: 500;
 }
 
 .row > h3 {
@@ -745,5 +752,5 @@ ul ul {
 
 /* fixes tooltip issue on mobile */
 button.tooltip-anchor {
-  width: auto;
+	width: auto;
 }

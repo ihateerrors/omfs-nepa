@@ -692,7 +692,6 @@ figcaption {
 	padding: 1.25em;
 	box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.4);
 	cursor: pointer;
-	/* max-width: 300px; */
 	transition: transform 0.2s, box-shadow 100ms;
 }
 
@@ -734,7 +733,6 @@ ul ul {
 }
 
 /* -- Centers the .accordion icons --  */
-
 .accordion {
 	display: flex;
 	justify-content: space-between;

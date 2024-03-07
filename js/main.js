@@ -81,4 +81,3 @@ accAnchorList.forEach(anchor => anchor.addEventListener("click", (e) => {
   }
 }));
 
-

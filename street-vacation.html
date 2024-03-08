@@ -61,12 +61,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,800;1,900&family=Roboto+Mono&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,800;1,900&family=Roboto+Mono&display=swap"
     rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- Swiper.js CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
 </head>
@@ -312,6 +313,47 @@
         </div> <!-- .row -->
     </div> <!-- .container -->
 
+  <!-- ## Slider section start ## -->
+  <style></style>
+  <section id="slider" class="mb-5 pb-5" style="align-items: center; text-align: center;">
+    <div class="container">
+      <div class="row mb-3 pb-5">
+        <div class="col-md-12">
+          <h2 class="mt-5 mb-3"> </h2>
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide center">
+                <div class="slide-content">
+                  <img src="img/seating_outdoor.png" alt="Slide 1 - Possible public space features: examples of public seating.">
+                  <div class="caption">Possible public space features: examples of public seating.</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-content">
+                  <img src="img/pedestrian_lighting.png" alt="Slide 2 - Possible public space features: examples of pedestrian lighting.">
+                  <div class="caption">Possible public space features: examples of pedestrian lighting.</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-content">
+                  <img src="img/educational_signage.png" alt="Slide 3 - Possible public space features: examples of educational signage.">
+                  <div class="caption">Possible public space features: examples of educational signage.</div>
+                </div>
+              </div>
+            </div>
+            <!-- Add navigation arrows -->
+            <br><br><div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- ## END Slider section ## -->
+
     <div class="entry-header nm mt-5">
         <div class="container">
           <div class="row">
@@ -428,7 +470,10 @@
       </p>
 
       <div class="copyright clearfix">
-        Copyright ©2023
+        Copyright ©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
         <a href="http://www.enviroissues.com" target="_blank">EnviroIssues</a>
       </div>
     </div>
@@ -440,6 +485,20 @@
   <script src="js/main.js"></script>
   <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?
 cb=googleTranslateElementInit"></script>
-</body>
 
+<!-- // initialize Swiper.js - one of many alternates; see swiperjs.com for more functionality & style options (there are lots!) -->
+          <script>
+          const swiper = new Swiper(".mySwiper", {
+            pagination: {
+              el: ".swiper-pagination",
+              type: "fraction",
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+
+          </script>
+      </body>
 </html>

@@ -753,6 +753,10 @@ button.tooltip-anchor {
 	width: auto;
 }
 
+.navbar-z-index {
+	z-index: 100;
+}
+
 /* ###   Swiper styles   ### */
 
 #slider {
@@ -796,12 +800,6 @@ button.tooltip-anchor {
 	align-items: center;
   }
   
-  .caption {
-	text-align: center;
-	margin-top: 14px;
-	font-style: italic;
-	line-height: 28px;
-  }
 
   .swiper-button-next, .swiper-button-prev {
 	top: 50%; 
@@ -840,4 +838,5 @@ button.tooltip-anchor {
 	white-space: normal;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	font-style: italic;
   }

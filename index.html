@@ -24,10 +24,11 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
 
-  <link rel="stylesheet" id="load-fa-5-css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css?ver=5.9" media="all" />
-  <link rel="stylesheet" id="load-fa-4-css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css?ver=5.9" media="all" />
+        <!-- Swiper.js CDN -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/56475f5c73.js" crossorigin="anonymous" defer></script>  
   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
@@ -89,14 +90,14 @@
             </span>
           </div>
           <div class="col-md-5">
-            <div id="google_translate_element"></div>
+            <div id="google_translate_element" class="pb-3 pb-md-0"></div>
           </div>
         </div>
         <div class="row" style="margin-top: -0.5%">
           <div class="col">
-            <a href="https://omfsouth-spanish.participate.online/">Español</a> |
-            <a href="https://omfsouth-korean.participate.online/"> 스페인어 </a> |
-            <a href="https://omfsouth-russian.participate.online/">русский</a>
+            <a href="https://omfsouth-spanish.participate.online/" class="pe-2 pe-md-0">Español</a> |
+            <a href="https://omfsouth-korean.participate.online/" class="px-2 px-md-0"> 스페인어 </a> |
+            <a href="https://omfsouth-russian.participate.online/" class="ps-2 ps-md-0">русский</a>
           </div>
         </div>
       </div>
@@ -116,22 +117,22 @@
 
   <div class="topdiv sticky-top">
     <progress id="progressbar" value="0" max="100"></progress>
-    <nav class="navbar navbar-expand-sm bg-transparent pt-0 sticky-top">
+    <nav class="navbar navbar-expand-md bg-transparent pt-0 sticky-top">
       <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <nav class="collapse navbar-collapse top_nav scrollspy_row" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
+            <li class="nav-item pb-2 pb-md-0">
               <a class="nav-link active" href="#welcome">Welcome</a>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item pb-2 pb-md-0">
               <a class="nav-link" href="#ev">Environmental review</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown pb-2 pb-md-0">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Alternatives
@@ -143,13 +144,19 @@
                 <a class="dropdown-item" href="#midway-landfill">Midway Landfill</a>
               </div>
             </li>
-            <li class="nav-item">
+            <li class="nav-item pb-2 pb-md-0">
               <a class="nav-link" href="#key-impacts">Key impacts</a>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item pb-2 pb-md-0">
               <a class="nav-link" href="#next-steps">Next steps</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="street-vacation.html">20th Ave S vacation
+                <i class="far fa-comment" aria-hidden="true"></i>
+              </a>
+            </li>
+
           </ul>
 
         </nav>
@@ -451,77 +458,14 @@
         alternative.
       </p>
       <p>
-        Now, we’re combining our state (SEPA) and federal (NEPA) environmental review processes. We’ve published a Draft
-        EIS that evaluates these same alternatives. A Final EIS will follow in 2024.
-      </p>
-      <h4>What potential environmental effects are different from the 2021 SEPA Draft EIS? </h4>
-      <p>Since the 2021 SEPA Draft EIS, we've updated the analysis for all three alternatives. Here
-        are some key updates.</p>
-      <p><b>Increased residential displacements for Federal Way sites (preferred alternative and South 344th Street)</b>
-      </p>
-      <ul>
-        <li>Since the 2021 SEPA Draft EIS publication, residential displacements have increased by 18-24 due to the
-          advancement of design and construction information and the increased site size. The additional displacements
-          are primarily along the northern portion of the guideway that connects the preferred and South 344th Street
-          alternatives to the OMF site.</li>
-      </ul>
-      <p><b>Other notable changes to potential effects from the preferred alternative</b></p>
-      <ul>
-        <li>The amount of long-term impacts to ecosystem resources, including streams, wetlands, and mature forest,
-          decreased. However, the amount of long-term impacts to wetland buffers increased. These changes are due to
-          refinements to the site design.</li>
-        <li>Due to the site expansion, there was an increase in business and
-          employee displacements.</li>
-      </ul>
-      <p><b>Other notable potential effects</b></p>
-      <ul>
-        <li>Cost estimates have been updated to 2023 dollars and incorporate design refinements. Cost estimates are for comparative purposes and do not represent the project budget. The construction market in the Puget Sound region is affecting most infrastructure projects, so final construction costs may be higher than these comparative estimates. </li>
-        <li>For the 344th Street alternative, business and employee displacements decreased due to shortening the tail
-          track.</li>
-      </ul>
-      <h4>Why should I comment on the Draft EIS?</h4>
-      <div style="background-color: #FFB819;" class="px-2">
-        <p class="py-1"><b>All comments that were provided on the SEPA Draft EIS in 2021 remain valid and do not need to
-            be resubmitted. We will respond to all substantive comments from both comment periods in the Final EIS.</b>
-        </p>
-      </div>
-      <p>During this Draft EIS comment
-        period through Nov. 6, you can provide feedback on the alternatives, EIS analysis, and summary of scoping
-        comments. SEPA Draft EIS comments from 2021 remain valid and do not need to be resubmitted; however, if you’d
-        like to comment again,
-        focus your comments on the project changes and updated analysis. After the comment period, we’ll then prepare a
-        Final EIS, which will evaluate the
-        preferred and other alternatives, and include responses to all substantive comments received on the Draft EIS.
-        We expect to publish the Final EIS in 2024, then the Board will select the project to be built. Why comment?
-        Comments from Tribes, the public, and agency partners inform the Board in their decision-making.</p>
-      <!-- Accordion -->
-      <button class="accordion thr" aria-expanded="false" aria-controls="accordion">
-        Questions about your property?
-      </button>
-      <div class="panel">
-        <p>
-          Did you receive a property owner letter or think the project may affect your property? A notification of
-          potential impact does not mean a decision has been made to purchase your property, but it does mean there’s a
-          possibility we would need to acquire your property in the future.
-        </p>
-        <p>
-          Final decisions on affected properties and acquisitions generally won’t occur until after the Final EIS and
-          the Sound
-          Transit Board selects the project to be built. In some limited cases, Sound Transit purchases properties prior
-          to the Board's action. If we determine that your property is needed for OMF South, Sound Transit will initiate
-          official
-          conversations around acquisitions and relocation at that time and after an independent appraisal process.
-        </p>
-        <p>Our project outreach team is available to help with questions every step of the way. To set up a property
-          owner briefing with members of the project team you can:</p>
-        <ul>
-          <li>Leave a voicemail at 206-398-5453</li>
-          <li>
-            Email us at
-            <a href="mailto:OMFSouth@soundtransit.org">OMFSouth@soundtransit.org</a>
-          </li>
-        </ul>
-        <hr class="thr" />
+    	In 2023 we combined our state (SEPA) and federal (NEPA) environmental review processes. We published a NEPA Draft/SEPA Supplemental Draft EIS that evaluates these same alternatives. A Final EIS will follow in 2024.       
+	  </p>
+	  <h4>
+		Final EIS Process
+	  </h4>
+	  <p>
+		We expect to publish the Final EIS in mid-2024. A Final EIS includes analysis of the alternatives studied in the Draft EIS and responds to substantive comments received on the Draft EIS. After publication of the Final EIS, the Sound Transit Board considers the EIS analysis and comments received then selects the project to be built. The Federal Transit Administration (FTA) is then anticipated to issue a Record of Decision, which provides approval for the next phase of the project—design and construction of the facility! 
+	  </p>
       </div>
 
       <div>
@@ -638,7 +582,7 @@
                 The preferred alternative includes about 1.4 miles of
                 <a href="#fedWayAcc-1" class="acc-anchor">
                   mainline
-                  light rail tracks<sup>🛈</sup>
+                  light rail tracks
                 </a>. These tracks would also be needed for the Tacoma Dome Link Extension
                 light rail alignment.
               </li>
@@ -654,7 +598,7 @@
               <!-- Accordion -->
               <button id="fedWayAcc-1" class="accordion thr" aria-expanded="false" aria-controls="accordion"
                 style="font-size: 23px;">
-                <sup>🛈</sup>Why do the sites in Federal Way require light rail tracks?
+                Why do the sites in Federal Way require light rail tracks?
               </button>
               <div class="panel">
                 <p>
@@ -679,7 +623,7 @@
               <!-- -------  -->
               <!-- Accordion -->
               <button class="accordion thr" aria-expanded="false" aria-controls="accordion">
-                <sup>🛈</sup>What’s a test track?
+                What’s a test track?
               </button>
               <div class="panel">
                 <p>
@@ -796,7 +740,7 @@
               <li>The South 344th Street alternative includes about 1.8 miles of <a href="#fedWayAcc-2"
                   class="acc-anchor">
                   mainline
-                  light rail tracks<sup>🛈</sup>
+                  light rail tracks
                 </a>. The tracks would also be needed for TDLE.</li>
               <li>This site would include a test track. The test track would run parallel and on the east side of the
                 connecting light rail tracks.</li>
@@ -806,7 +750,7 @@
               <!-- Accordion -->
               <button id="fedWayAcc-2" class="accordion thr" aria-expanded="false" aria-controls="accordion"
                 style="font-size: 23px;">
-                <sup>🛈</sup>Why do the sites in Federal Way require light rail tracks?
+                Why do the sites in Federal Way require light rail tracks?
 
               </button>
               <div class="panel">
@@ -832,7 +776,7 @@
               <!-- -------  -->
               <!-- Accordion -->
               <button class="accordion thr" aria-expanded="false" aria-controls="accordion">
-                <sup>🛈</sup>What’s a test track?
+                What’s a test track?
               </button>
               <div class="panel">
                 <p>
@@ -955,7 +899,7 @@
               <li>This site would not include a <button class="tooltip-anchor" data-bs-toggle="tooltip"
                   data-bs-placement="top"
                   title="A section of track for testing light rail vehicles that can be used during regular light rail service because it is separated from the mainline track.">test
-                  track<sup>🛈</sup></button> because of varying grades. A test track needs to be primarily at-grade and
+                  track</button> because of varying grades. A test track needs to be primarily at-grade and
                 on relatively straight and flat terrain, making this location not suitable for meeting minimum
                 operational and construction requirements.</li>
             </ul>
@@ -963,7 +907,7 @@
             <div class="accordion-list pt-5">
               <!-- Accordion -->
               <button id="landfillAcc" class="accordion thr" aria-expanded="false" aria-controls="accordion">
-                <sup>🛈</sup>How do you build on a landfill?
+                How do you build on a landfill?
               </button>
               <div class="panel">
                 <p>
@@ -1703,22 +1647,22 @@
           <hr />
           <h1>Follow us</h1>
           <p>
-            <a class="sociallink" href="https://www.facebook.com/SoundTransit" target="_blank">
+            <a class="sociallink pe-3 pe-lg-2" href="https://www.facebook.com/SoundTransit" target="_blank">
               <img src="img/footer_fb_icon.svg" class="socialicon" alt="Facebook icon" />
             </a>
-            <a class="sociallink" href="https://twitter.com/soundtransit" target="_blank">
+            <a class="sociallink pe-3 pe-lg-2" href="https://twitter.com/soundtransit" target="_blank">
               <img src="img/footer_twitter_icon.svg" class="socialicon" alt="Twitter icon" />
             </a>
-            <a class="sociallink" href="https://www.flickr.com/photos/soundtransit/" target="_blank">
+            <a class="sociallink pe-3 pe-lg-2" href="https://www.flickr.com/photos/soundtransit/" target="_blank">
               <img src="img/footer_flickr_icon.svg" class="socialicon" alt="Flikr icon" />
             </a>
-            <a class="sociallink" href="https://www.youtube.com/user/SoundTransit" target="_blank">
+            <a class="sociallink pe-3 pe-lg-2" href="https://www.youtube.com/user/SoundTransit" target="_blank">
               <img src="img/footer_youtube_icon.svg" class="socialicon" alt="YouTube icon" />
             </a>
-            <a class="sociallink" href="https://www.instagram.com/soundtransit/" target="_blank">
+            <a class="sociallink pe-3 pe-lg-2" href="https://www.instagram.com/soundtransit/" target="_blank">
               <img src="img/footer_instagram_icon.svg" class="socialicon" alt="Instagram icon" />
             </a>
-            <a class="sociallink" href="https://plus.google.com/explore/SoundTransit" target="_blank">
+            <a class="sociallink pe-3 pe-lg-2" href="https://plus.google.com/explore/SoundTransit" target="_blank">
               <img src="img/footer_googleplus_icon.svg" class="socialicon" alt="Google Plus icon" />
             </a>
           </p>

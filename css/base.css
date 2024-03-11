@@ -74,6 +74,7 @@ textarea {
 }
 button {
   overflow: visible;
+  word-wrap: normal;
 }
 
 button,
@@ -737,6 +738,11 @@ header#mainheader h1 {
   span.timespan {
     padding-left: 10px;
   }
+
+
+}
+
+@media screen and (max-width: 767px) {
 
   .topbar #google_translate_element {
     float: none;

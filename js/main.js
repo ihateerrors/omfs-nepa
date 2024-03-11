@@ -24,24 +24,6 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-jQuery(window).on("scroll", onScroll);
-
-function onScroll(event) {
-  var scrollPos = jQuery(document).scrollTop();
-  jQuery("#navbarSupportedContent a").each(function () {
-    var currLink = jQuery(this);
-    var refElement = jQuery(currLink.attr("href"));
-    if (
-      refElement.offset().top - 200 <= scrollPos &&
-      refElement.offset().top + refElement.height() > scrollPos
-    ) {
-      jQuery("#menu-center ul li a").removeClass("active");
-      currLink.addClass("active");
-    } else {
-      currLink.removeClass("active");
-    }
-  });
-}
 
 jQuery(".tab-row a").each(function () {
   jQuery(this).on("click", function (event) {
@@ -98,5 +80,4 @@ accAnchorList.forEach(anchor => anchor.addEventListener("click", (e) => {
     
   }
 }));
-
 

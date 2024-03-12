@@ -51,7 +51,6 @@ function onScroll(event) {
 		});
 }
 
-
 window.addEventListener("scroll", function () {
 	let s = window.scrollY;
 	let d = document.documentElement.scrollHeight || document.body.scrollHeight;

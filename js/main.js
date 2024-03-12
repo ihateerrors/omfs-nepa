@@ -25,30 +25,41 @@ for (i = 0; i < acc.length; i++) {
 }
 
 
-jQuery(".tab-row a").each(function () {
-  jQuery(this).on("click", function (event) {
-    event.preventDefault();
-    var currentId = jQuery(this).attr("href");
-    setTimeout(() => {
-      jQuery("html, body").animate(
-        {
-          scrollTop: jQuery(currentId).offset().top - 50,
-        },
-        0
-      );
-    }, 0);
-  });
-});
+window.addEventListener("scroll", onScroll);
+function onScroll(event) {
+	let scrollPos =
+		document.documentElement.scrollTop || document.body.scrollTop;
+	document
+		.querySelectorAll("#navbarSupportedContent a")
+		.forEach(function (currLink) {
+			let refElementSelector = currLink.getAttribute("href");
+			let refElement = document.querySelector(refElementSelector);
+			if (
+				refElement &&
+				refElement.offsetTop - 200 <= scrollPos &&
+				refElement.offsetTop + refElement.offsetHeight > scrollPos
+			) {
+				document
+					.querySelectorAll("#navbarSupportedContent ul li a")
+					.forEach((link) => {
+						link.classList.remove("active");
+					});
+				currLink.classList.add("active");
+			} else {
+				currLink.classList.remove("active");
+			}
+		});
+}
 
 
-$(window).scroll(function () {
-  var s = $(window).scrollTop(),
-    d = $(document).height(),
-    c = $(window).height();
-  scrollPercent = (s / (d - c)) * 100;
-  var position = scrollPercent;
+window.addEventListener("scroll", function () {
+	let s = window.scrollY;
+	let d = document.documentElement.scrollHeight || document.body.scrollHeight;
+	let c = window.innerHeight;
+	let scrollPercent = (s / (d - c)) * 100;
+	let position = scrollPercent;
 
-  $("#progressbar").attr("value", position);
+	document.querySelector("#progressbar").value = position;
 });
 
 // ----- Tooltip ----- 

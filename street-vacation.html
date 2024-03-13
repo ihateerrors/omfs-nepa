@@ -29,7 +29,6 @@
   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
-  <link rel="manifest" href="img/manifest.json" />
   <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5" />
   <link rel="shortcut icon" href="img/favicon.ico" />
   <meta name="msapplication-config" content="img/browserconfig.xml" />
@@ -72,7 +71,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
 </head>
 
-<body data-spy="scroll" data-target="#navbarSupportedContent" data-offset="0">
+<body  id="street-vacation" data-spy="scroll" data-target="#navbarSupportedContent" data-offset="0">
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJFLKXJ"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -117,7 +116,7 @@
     <progress id="progressbar" value="0" max="100"></progress>
     <nav class="navbar navbar-expand-sm bg-transparent pt-0 sticky-top">
       <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -131,7 +130,7 @@
               <a class="nav-link" href="index.html#ev">Environmental review</a>
             </li>
             <li class="nav-item dropdown pb-2 pb-md-0">
-              <a class="nav-link dropdown-toggle" href="index.html#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Alternatives
               </a>
@@ -150,7 +149,7 @@
               <a class="nav-link" href="index.html#next-steps">Next steps</a>
             </li>
             <li class="nav-item" aria-label="20th Avenue South Vacation">
-              <a class="nav-link active comment-icon" href="street-vacation.html" >
+              <a class="nav-link active comment-icon" href="#street-vacation" >
                 20th Ave S vacation 
                 <i class="far fa-comment" aria-hidden="true"></i>
               </a>
@@ -492,9 +491,7 @@
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
+
   <script src="js/main.js"></script>
   <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?
 cb=googleTranslateElementInit"></script>

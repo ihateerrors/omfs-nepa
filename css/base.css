@@ -302,11 +302,14 @@ form [type="submit"] {
   font-weight: 600;
   font-style: italic;
 }
+
 @font-face {
   font-family: "Nunito Sans";
   src: url("fonts/NunitoSans-BlackItalic.eot");
   src: url("fonts/NunitoSans-BlackItalic.eot?#iefix")
       format("embedded-opentype"),
+    url("fonts/NunitoSans-BlackItalic.woff2") format("woff2"),
+    url("fonts/NunitoSans-BlackItalic.woff") format("woff"),
     url("fonts/NunitoSans-BlackItalic.ttf") format("truetype");
   font-weight: 700;
   font-style: italic;
@@ -317,6 +320,8 @@ form [type="submit"] {
   src: url("fonts/NunitoSans-ExtraBoldItalic.eot");
   src: url("fonts/NunitoSans-ExtraBoldItalic.eot?#iefix")
       format("embedded-opentype"),
+    url("fonts/NunitoSans-ExtraBoldItalic.woff2") format("woff2"),
+    url("fonts/NunitoSans-ExtraBoldItalic.woff") format("woff"),
     url("fonts/NunitoSans-ExtraBoldItalic.ttf") format("truetype");
   font-weight: 800;
   font-style: italic;
@@ -417,6 +422,8 @@ form [type="submit"] {
   src: url("fonts/NunitoSans-BlackItalic.eot");
   src: url("fonts/NunitoSans-BlackItalic.eot?#iefix")
       format("embedded-opentype"),
+    url("fonts/NunitoSans-BlackItalic.woff2") format("woff2"),
+    url("fonts/NunitoSans-BlackItalic.woff") format("woff"),
     url("fonts/NunitoSans-BlackItalic.ttf") format("truetype");
   font-weight: 900;
   font-style: italic;
@@ -443,10 +450,13 @@ form [type="submit"] {
   font-weight: bold;
   font-style: italic;
 }
+
 @font-face {
   font-family: "Hind";
   src: url("fonts/Hind-SemiBold.eot");
   src: url("fonts/Hind-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Hind-SemiBold.woff2") format("woff2"),
+    url("fonts/Hind-SemiBold.woff") format("woff"),
     url("fonts/Hind-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
@@ -456,6 +466,8 @@ form [type="submit"] {
   font-family: "Hind";
   src: url("fonts/Hind-Bold.eot");
   src: url("fonts/Hind-Bold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Hind-Bold.woff2") format("woff2"),
+    url("fonts/Hind-Bold.woff") format("woff"),
     url("fonts/Hind-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
@@ -465,6 +477,8 @@ form [type="submit"] {
   font-family: "Hind";
   src: url("fonts/Hind-Regular.eot");
   src: url("fonts/Hind-Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Hind-Regular.woff2") format("woff2"),
+    url("fonts/Hind-Regular.woff") format("woff"),
     url("fonts/Hind-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
@@ -474,6 +488,8 @@ form [type="submit"] {
   font-family: "Hind";
   src: url("fonts/Hind-Medium.eot");
   src: url("fonts/Hind-Medium.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Hind-Medium.woff2") format("woff2"),
+    url("fonts/Hind-Medium.woff") format("woff"),
     url("fonts/Hind-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;

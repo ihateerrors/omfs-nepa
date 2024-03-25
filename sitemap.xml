@@ -9,8 +9,13 @@
 
 <url>
   <loc>https://omfsouth.participate.online/</loc>
-  <lastmod>2023-09-22T21:37:51+00:00</lastmod>
+  <lastmod>2024-03-13T21:00:30+00:00</lastmod>
   <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://omfsouth.participate.online/street-vacation</loc>
+  <lastmod>2024-03-13T21:00:30+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://omfsouth.participate.online/img/2021_0918_ST_OMF_South_DEIS_Handout_v5.pdf</loc>
@@ -31,6 +36,21 @@
   <loc>https://omfsouth.participate.online/img/2023_09_OMFSouth_GuideToNEPADraftEIS_Handout_Russian.pdf</loc>
   <lastmod>2023-09-21T23:00:37+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://omfsouth.participate.online/index</loc>
+  <lastmod>2024-03-13T21:00:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://omfsouth.participate.online/img\2024_0221_ST_OMFSouth_Map_After_v3_72ppi.pdf</loc>
+  <lastmod>2024-03-11T17:37:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://omfsouth.participate.online/img\2024_0308_ST_OMFSouth_Map_NewPublicBenefits.pdf</loc>
+  <lastmod>2024-03-11T17:37:59+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
